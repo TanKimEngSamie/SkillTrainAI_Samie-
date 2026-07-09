@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: #f8fafc; /* bg-slate-50 */
+  color: #0f172a; /* text-slate-900 */
+}
+
+/* ==========================================
+   GEOMETRIC BALANCE GLOBAL THEME OVERRIDES 
+   ========================================== */
+
+/* Background replacements */
+.bg-slate-950 {
+  background-color: #ffffff !important;
+}
+.bg-slate-950\/40 {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+.bg-slate-950\/60 {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+.bg-slate-900 {
+  background-color: #ffffff !important;
+}
+.bg-slate-900\/40 {
+  background-color: rgba(241, 245, 249, 0.4) !important; /* slate-100/40 */
+}
+.bg-slate-900\/60 {
+  background-color: rgba(241, 245, 249, 0.6) !important;
+}
+.bg-slate-900\/80 {
+  background-color: rgba(241, 245, 249, 0.8) !important;
+}
+
+/* Specific document workspace console card styling */
+#interactive-demo .bg-slate-900 {
+  background-color: #ffffff !important;
+}
+#interactive-demo .bg-slate-950 {
+  background-color: #f8fafc !important; /* light control console background */
+}
+
+/* Borders */
+.border-slate-900 {
+  border-color: #e2e8f0 !important; /* border-slate-200 */
+}
+.border-slate-900\/60 {
+  border-color: rgba(226, 232, 240, 0.6) !important;
+}
+.border-slate-800 {
+  border-color: #e2e8f0 !important; /* border-slate-200 */
+}
+.border-slate-800\/60 {
+  border-color: rgba(226, 232, 240, 0.6) !important;
+}
+.border-slate-800\/80 {
+  border-color: rgba(226, 232, 240, 0.8) !important;
+}
+
+/* Text Colors */
+.text-white {
+  color: #0f172a !important; /* text-slate-900 */
+}
+.text-slate-100 {
+  color: #1e293b !important; /* text-slate-800 */
+}
+.text-slate-200 {
+  color: #334155 !important; /* text-slate-700 */
+}
+.text-slate-300 {
+  color: #475569 !important; /* text-slate-600 */
+}
+.text-slate-400 {
+  color: #64748b !important; /* text-slate-500 */
+}
+.text-slate-500 {
+  color: #94a3b8 !important; /* text-slate-400 */
+}
+
+/* Force headings to maintain their gradient styles or use elegant corporate blue */
+h1.text-white, h2.text-white, h3.text-white, h4.text-white {
+  color: #0284c7 !important; /* bright corporate baby blue (sky-600) */
+  font-family: "Space Grotesk", "Inter", sans-serif !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Accent Gradients: Update from dark neon cyan-teal to premium baby blue colors */
+.from-cyan-600, .from-cyan-500 {
+  --tw-gradient-from: #0ea5e9 !important; /* bright baby blue (sky-500) */
+  --tw-gradient-to: #0d9488 !important; /* teal-600 */
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+.to-teal-500, .to-teal-400 {
+  --tw-gradient-to: #0d9488 !important; /* teal-600 */
+}
+
+/* Specific text/bg color class overrides for baby blue transition */
+.text-blue-900 {
+  color: #0284c7 !important; /* baby blue (sky-600) */
+}
+.bg-blue-900 {
+  background-color: #0ea5e9 !important; /* bright baby blue (sky-500) */
+}
+.bg-blue-900:hover, .hover\:bg-blue-800:hover {
+  background-color: #0284c7 !important; /* baby blue hover (sky-600) */
+}
+.shadow-blue-900\/20 {
+  --tw-shadow-color: rgba(14, 165, 233, 0.25) !important;
+}
+
+/* Scrollbar theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* High contrast teal colors for accessibility in light-mode */
+.text-teal-400, .text-teal-500 {
+  color: #0d9488 !important; /* deep corporate teal-600 */
+}
+.text-teal-300 {
+  color: #0f766e !important; /* deep corporate teal-700 */
+}
+.bg-teal-500\/10, .bg-teal-500\/15 {
+  background-color: rgba(13, 148, 136, 0.1) !important;
+}
+
+/* Beautiful hover effects for buttons */
+button.bg-slate-900:hover {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+

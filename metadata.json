@@ -1,0 +1,6 @@
+{
+  "name": "Synergy SkillTrain AI",
+  "description": "SkillTrain AI is an AI-powered Knowledge Management Chatbot designed for SMEs. It captures, organizes, and retrieves company knowledge from SOPs, employee handbooks, FAQs, and policies instantly.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
